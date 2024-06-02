@@ -30,6 +30,7 @@ export default function Home() {
       <Card className="w-auto h-auto rounded border-black">
         <CardContent className="flex flex-row p-0">
           <div className="bg-[#F4ECE6] flex flex-col items-center justify-center p-4">
+            <div className="">
             <Image
               src={profilepic}
               alt="my profile pic"
@@ -37,7 +38,7 @@ export default function Home() {
             />
             <p className="flex">Gabriel Getizo</p>
             <p className="flex font-semibold">Front-End Developer</p>
-            <Separator className="border-black"/>
+            <Separator />
             <div className="pt-10 flex flex-row space-x-4">
             <a href="https://www.facebook.com/GreatGabow/">
             <TooltipProvider>
@@ -71,9 +72,11 @@ export default function Home() {
             </TooltipProvider>
             </div>
           </div>
-          <div className="flex flex-col items-center  ml-4 p-4">
+          </div>
+          <div className="w-96 flex flex-col ml-4 p-4">
             <h1 className="font-bold text-7xl">HELLO!</h1>
-            <h2>Here&apos;s who I am</h2>
+            <h2 className="font-semibold">Here&apos;s who I am</h2>
+            <p>I am a Website Developer who currently does Front-End! This website is made with Next.Js</p>
           </div>
         </CardContent>
       </Card>
