@@ -27,7 +27,7 @@ export default function Home() {
     <div className="font-sans w-auto">
       <Header/>
       <div className="flex justify-center m-40">
-      <Card className="w-auto h-auto rounded border-black">
+      <Card className="lg:w-auto w-80 h-auto rounded border-black">
         <CardContent className="flex flex-row p-0">
           <div className="bg-[#F4ECE6] flex flex-col items-center justify-center p-4">
             <div className="">
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           </div>
           <div className="w-96 flex flex-col ml-4 p-4">
-            <h1 className="font-bold text-7xl">HELLO!</h1>
+            <h1 className="font-bold lg:text-7xl text-5xl">HELLO!</h1>
             <h2 className="font-semibold">Here&apos;s who I am</h2>
             <p>I am a Website Developer who currently does Front-End! This website is made with Next.Js</p>
           </div>
