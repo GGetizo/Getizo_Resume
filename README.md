@@ -1,1 +1,1 @@
-# Getizo_Resume
+This is my resume website
