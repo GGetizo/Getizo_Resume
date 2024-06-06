@@ -13,6 +13,17 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator"
 import Header from "@/components/uicomponents/header"
 import Footer from "@/components/uicomponents/footer"
@@ -26,7 +37,7 @@ export default function Home() {
   return (
     <div className="font-sans w-auto">
       <Header/>
-      <div className="flex justify-center m-40">
+      <div className="flex justify-center m-32">
       <Card className="lg:w-auto w-80 h-auto rounded border-black">
         <CardContent className="flex flex-row p-0">
           <div className="bg-[#F4ECE6] flex flex-col items-center justify-center p-4">
@@ -56,20 +67,24 @@ export default function Home() {
               </Tooltip>
             </TooltipProvider>
             </a>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                <Image
-                src={gmaillogo}
-                alt="gmail"
-                className="w-6 h-6"
-                />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>gfsgetizo@gmail.com</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+                  <AlertDialog>
+                    <AlertDialogTrigger>
+                    <Image
+                    src={gmaillogo}
+                    alt="gmail"
+                    className="w-6 h-6"
+                    />
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                      <h1 className="font-bold">Contact Me:</h1>
+                      <h2>gfsgetizo@gmail.com</h2>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogAction>Thanks!</AlertDialogAction>
+                        </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
             </div>
           </div>
           </div>
