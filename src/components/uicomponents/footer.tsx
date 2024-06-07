@@ -11,7 +11,7 @@ import gmaillogo from "../images/gmailicon.png"
 export default function footer() {
     return (
         <div>
-            <footer className="h-12 rounded flex items-center justify-end px-4 py-8 space-x-12">
+            <footer className="h-12 rounded flex items-center justify-end px-4 py-8 space-x-12 border-t-black border-t-2">
                 <div className="flex-shrink-0 flex flex-col items-center space-x-2">
                 <p>Call Me:</p>
                 <p>0976-3500-735</p>

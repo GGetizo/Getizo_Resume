@@ -25,17 +25,19 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator"
+import { TypeAnimation } from 'react-type-animation';
 import Header from "@/components/uicomponents/header"
 import Footer from "@/components/uicomponents/footer"
 import Image from "next/image"
-import profilepic from "@/components/images/pfp.png"
+import profilepic from "@/components/images/pfp2.jpg"
 import fblogo from "@/components/images/fbicon.png"
 import gmaillogo from "@/components/images/gmailicon.png"
 
 
 export default function Home() {
   return (
-    <div className="font-sans w-auto">
+    <div className="font-sans w-auto bg-gradient-to-r from-[#F4ECE6] to-[#FFFFFF]"
+    >
       <Header/>
       <div className="flex justify-center m-32">
       <Card className="lg:w-auto w-80 h-auto rounded border-black">
@@ -45,12 +47,12 @@ export default function Home() {
             <Image
               src={profilepic}
               alt="my profile pic"
-              className="w-16 rounded-full mb-2" 
+              className="w-44 rounded-full mb-2" 
             />
             <p className="flex">Gabriel Getizo</p>
-            <p className="flex font-semibold">Front-End Developer</p>
             <Separator />
-            <div className="pt-10 flex flex-row space-x-4">
+            <p className="flex font-semibold">Front-End Developer</p>
+            <div className="pt-10 flex justify-center items-center flex-row space-x-4">
             <a href="https://www.facebook.com/GreatGabow/">
             <TooltipProvider>
               <Tooltip>
@@ -58,7 +60,7 @@ export default function Home() {
                   <Image
                   src={fblogo}
                   alt="fb"
-                  className="w-6 h-6" 
+                  className="w-6 h-6 mb-0" 
                   />
               </TooltipTrigger>
               <TooltipContent>
@@ -72,7 +74,7 @@ export default function Home() {
                     <Image
                     src={gmaillogo}
                     alt="gmail"
-                    className="w-6 h-6"
+                    className="w-6 h-6 mb-0"
                     />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
@@ -89,9 +91,29 @@ export default function Home() {
           </div>
           </div>
           <div className="w-96 flex flex-col ml-4 p-4">
-            <h1 className="font-bold lg:text-7xl text-5xl">HELLO!</h1>
-            <h2 className="font-semibold">Here&apos;s who I am</h2>
-            <p>I am a Website Developer who currently does Front-End! This website is made with Next.Js</p>
+            <h1 className="font-bold lg:text-5xl text-4xl">
+              <TypeAnimation sequence={[
+                'H',
+                1000,
+                'HE',
+                1000,
+                'HEL',
+                1000,
+                'HELL',
+                1000,
+                'HELLO',
+                1000,
+                'HELLO!',
+                1000,
+                ' '
+              ]}
+              repeat={Infinity}
+              />
+              </h1>
+            <h2 className="font-semibold pt-3">Here&apos;s who I am</h2>
+            <p>I am a Website Developer who currently does Front-End!
+            I plan to expand my horizons by doing back-end in the future.
+            </p>
           </div>
         </CardContent>
       </Card>

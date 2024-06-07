@@ -8,12 +8,12 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog"
   import Link from 'next/link'
+  import React, { useState } from "react";
 
-export default function header() {
+export default function header() {    
         return (
     <div>
-    <header className="h-12 sticky top-0 rounded flex items-center justify-between lg:px-4 px-0 py-8"
-        style={{ boxShadow: 'inset 2px 2px 10px #797979, inset -2px 2px 10px #797979' }}
+    <header className="h-12 sticky top-0 rounded flex items-center justify-between lg:px-4 px-2 py-8"
         >
         <div className="flex-shrink-0 flex flex-row items-center lg:space-x-2">
             <p className="lg:text-base text-xs">Gabriel Getizo</p>
