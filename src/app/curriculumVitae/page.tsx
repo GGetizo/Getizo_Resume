@@ -22,7 +22,7 @@ export default function Page(){
     >
       <CardContent className="p-4 flex flex-row justify-between space-x-4">
         <div className="flex-shrink-0">
-          <p className="text-base font-bold">2024-2025</p>
+          <p className="text-base font-bold">2024-2026</p>
           <p className="lg:text-base text-sm font-medium">ALPHA Front-End Developer</p>
           <p className="lg:text-base text-sm">STI Ortigas-Cainta</p>
         </div>
@@ -40,7 +40,7 @@ export default function Page(){
     >
       <CardContent className="p-4 flex flex-row justify-between space-x-4">
         <div className="flex-shrink-0">
-          <p className="text-base font-bold">2027-Present</p>
+          <p className="text-base font-bold">2027-2030</p>
           <p className="lg:text-base text-sm font-medium">Jollibee Incorporated</p>
           <p className="lg:text-base text-sm">Professional Server</p>
         </div>
