@@ -41,12 +41,11 @@ export default function Page(){
       <CardContent className="p-4 flex flex-row justify-between space-x-4">
         <div className="flex-shrink-0">
           <p className="text-base font-bold">2027-Present</p>
-          <p className="lg:text-base text-sm font-medium">Full-Stack Web Developer</p>
-          <p className="lg:text-base text-sm">Freelancing</p>
+          <p className="lg:text-base text-sm font-medium">Jollibee Incorporated</p>
+          <p className="lg:text-base text-sm">Professional Server</p>
         </div>
         <div className="flex-grow">
-            <p className="lg:text-base text-sm">I freelance my skills as a Full-Stack Web Developer. You can contact me through
-              Facebook and Gmail about my rates!
+            <p className="lg:text-base text-sm">I am a currently a Professional Server and Cashier at Jollibee Angono. Happy to Serve!
             </p>
         </div>
       </CardContent>
@@ -81,6 +80,7 @@ export default function Page(){
           <p className="lg:text-base text-sm">Singing</p>
           <p className="lg:text-base text-sm">Playing Video Games</p>
           <p className="lg:text-base text-sm">Reading about History</p>
+          <p className="lg:text-base text-sm">Professional GG</p>
         </div>
         <div className="flex-grow">
           <p className="lg:text-base text-sm">My hobbies are singing, playing single player video games, and reading or watching about history. </p>
